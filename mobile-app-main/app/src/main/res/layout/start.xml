@@ -1,0 +1,86 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Outer LinearLayout -->
+    <LinearLayout
+        android:id="@+id/outerLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewContainer">
+
+        <!-- EditText -->
+        <EditText
+            android:id="@+id/wallet_field"
+            android:layout_width="315dp"
+            android:layout_height="52dp"
+            android:background="@drawable/text_field"
+            android:hint="@string/insert_wallet_placeholder"
+            android:textColorHint="#99000000"
+            android:textColor="@color/black"
+            android:paddingStart="30dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/login_buttom"
+            android:layout_width="159dp"
+            android:layout_height="52dp"
+            android:background="@drawable/button_1"
+            android:text="@string/login_placeholder"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <!-- Container for the last TextView -->
+    <LinearLayout
+        android:id="@+id/textViewContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/outerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Left TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/no_wallet_placeholder"
+            android:textColor="@color/black" />
+
+        <!-- Right TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_one_placeholder"
+            android:textColor="@color/secondary_purple"
+            android:textStyle="bold"
+            android:onClick="newWalletButtom"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

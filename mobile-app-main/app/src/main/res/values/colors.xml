@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_green">#339E13</color>
+    <color name="secondary_green">#84FF5E</color>
+    <color name="tertiary_green">#9CE685</color>
+    <color name="main_purple">#996590</color>
+    <color name="secondary_purple">#E65ECF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">garbageApp</string>
+
+    <!-- start view Strings -->
+    <string name="insert_wallet_placeholder">Insira sua carteira</string>
+    <string name="login_placeholder">entrar</string>
+    <string name="no_wallet_placeholder">Não possui carteira?</string>
+    <string name="create_one_placeholder"><u>CRIE UMA!</u></string>
+    <!-- end -->
+
+</resources>

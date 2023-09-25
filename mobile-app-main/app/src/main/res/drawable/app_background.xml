@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- background -->
+    <item android:bottom="0dp">
+        <shape>
+            <solid android:color="@color/main_green"/>
+        </shape>
+    </item>
+
+    <!-- Bottom Gradient -->
+    <item android:top="160dp">
+        <shape>
+            <gradient
+                android:startColor="@color/main_green"
+                android:endColor="@color/secondary_green"
+                android:angle="270"/>
+        </shape>
+    </item>
+
+
+</layer-list>
