@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">garbageApp</string>
+    <string name="confirm_placeholder">Confirmar</string>
 
-    <!-- start view Strings -->
+    <!-- Start view Strings -->
     <string name="insert_wallet_placeholder">Insira sua carteira</string>
     <string name="login_placeholder">entrar</string>
     <string name="no_wallet_placeholder">Não possui carteira?</string>
     <string name="create_one_placeholder"><u>CRIE UMA!</u></string>
+    <!-- end -->
+    
+    <!-- first_time_using.xml view Strings -->
+    <string name="type_your_name_placeholder">Como deseja ser chamada(o)?</string>
+    <string name="type_your_address_placeholder">Qual seu endereço?</string>
     <!-- end -->
 
 </resources>

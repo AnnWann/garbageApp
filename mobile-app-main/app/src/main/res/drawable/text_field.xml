@@ -6,7 +6,7 @@
             <stroke android:color="@color/tertiary_green"
                 android:width="6dp"
                 />
-            <corners android:radius="60dp"
+            <corners android:radius="60dp"/>
         </shape>
     </item>
 </layer-list>

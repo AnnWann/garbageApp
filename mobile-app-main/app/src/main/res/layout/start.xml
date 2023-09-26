@@ -36,13 +36,14 @@
             android:layout_height="52dp"
             android:background="@drawable/text_field"
             android:hint="@string/insert_wallet_placeholder"
-            android:textColorHint="#99000000"
+            android:textColorHint="@color/hint"
             android:textColor="@color/black"
             android:paddingStart="30dp"
             android:paddingEnd="10dp"
-            android:layout_marginBottom="25dp" />
+            android:layout_marginBottom="25dp"
+            />
 
-        <!-- Button -->
+        <!-- Button TODO: fix the button-->
         <Button
             android:id="@+id/login_buttom"
             android:layout_width="159dp"
@@ -51,6 +52,7 @@
             android:text="@string/login_placeholder"
             android:textAlignment="center"
             android:textColor="@color/black"
+            android:onClick="onLoginButton"
             />
     </LinearLayout>
 
@@ -81,6 +83,6 @@
             android:text="@string/create_one_placeholder"
             android:textColor="@color/secondary_purple"
             android:textStyle="bold"
-            android:onClick="newWalletButtom"/>
+            android:onClick="newWalletButton"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
