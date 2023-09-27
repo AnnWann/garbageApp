@@ -1,5 +1,6 @@
 <script lang=ts>
-    export let login:string;
+    export let message:string;
+    export let method: () => void;
 </script>
 
 <style>
@@ -9,7 +10,7 @@
         background-color: #E65ECF;
         color: black;
         padding: 14px 20px;
-        margin: 14px 20px;
+        text-align: center;
         border: 6px solid #9CE685;     
         border-radius: 60px;
         cursor: pointer;
@@ -22,5 +23,5 @@
 </style>
 
 <div>
-    <input type="submit" id="text_field" value={login}>
+    <input type="submit" id="button" on:click={method} value={message}>
 </div>
