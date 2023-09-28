@@ -1,20 +1,17 @@
 <script lang="ts">
-	import Upperbar from './../components/upperbar.svelte';
+	import { navbarData } from './../resources/linkUtil.js';
+  import Navbar from '../components/navbar.svelte';
   import LoginView from '../views/login_view.svelte';
+    import Signup from '../views/signup.svelte';
 
-  let a = 1;
-  function login(){
-    a++;
-  }
 </script>
 
-<Upperbar></Upperbar>
-
+<Navbar data={navbarData}></Navbar>
 
 <main>
   <div class="background">
     <div class="content">
-      <LoginView></LoginView>
+      <Signup></Signup>
     </div>
   </div>
   
@@ -22,12 +19,16 @@
 
 <style>
   .background{
-    background-color: #84FF5E;
-    min-height: 100vh;
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
     width: 100%;
-    position: fixed;
-    top: 52px;
-    left: 0;
+    height: 100%;
+    background:#84FF5E;
   }
 
 </style>

@@ -3,5 +3,11 @@
     "user_str": "usuário",
     "password_str":"senha",
     "login_button_str": "entrar",
-    "no_password_str": "Não possui conta?"
+    "no_password_str": "Não possui conta?",
+    "company_name_str": "nome da empresa",
+    "email_str": "e-mail",
+    "CNPJ_str":  "CNPJ",
+    "confirm_password_str": "confirmar senha",
+    "confirm_button_str": "confirmar",
+    "signup_title_str": "INSCRIÇÃO"
 }

@@ -17,5 +17,5 @@
     }
 </style>
 <div>
-    <input type="text" id="text_field" placeholder={hint}>
+    <input type="text" id={$$props.id} placeholder={hint}>
 </div>

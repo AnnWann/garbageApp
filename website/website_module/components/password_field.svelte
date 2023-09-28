@@ -8,6 +8,15 @@
     let dont_see_password = '../resources/see_password_icon.png'
 </script>
 
+<div style="position: relative;">
+    <input type={type} id={$$props.id} placeholder={hint}>
+    <button class="show_password_button" type="button" id='show_password' 
+                    on:click={() => show_password = !show_password}>
+        <img src={show_password ? see_password : dont_see_password} alt="buttonpng" />
+        </button>
+
+</div>
+
 <style>
     input{
         width: 100%;
@@ -42,14 +51,5 @@
         outline: none;
     }
 </style>
-
-<div style="position: relative;">
-    <input type={type} id="password_field" placeholder={hint}>
-    <button class="show_password_button" type="button" id='show_password' 
-                    on:click={() => show_password = !show_password}>
-        <img src={show_password ? see_password : dont_see_password} alt="buttonpng" />
-        </button>
-
-</div>
 
 

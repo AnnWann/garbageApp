@@ -9,12 +9,13 @@
         height: 100%;
         background-color: #E65ECF;
         color: black;
-        padding: 14px 20px;
+        padding: 12px 20px;
         text-align: center;
         border: 6px solid #9CE685;     
         border-radius: 60px;
         cursor: pointer;
         font-weight: bold;
+        margin-top: 8px;
     }
 
     input[type=submit]:hover{
